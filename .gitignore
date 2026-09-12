@@ -427,3 +427,11 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Personal notes / Obsidian vault + Claude memory - never commit
+memory/
+.obsidian/
+
+# TouchDesigner backups
+Backup/
+*.toe.bak

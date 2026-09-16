@@ -22,3 +22,23 @@ Project file: `IXD415.toe`.
 6. **Claude couldn't take the screenshot either** (same Screen Recording permission), so I took it with Cmd+Shift+3 and Claude copied it into the repo.
 
 **Takeaway:** most of the friction was macOS permissions and things that only happen on a *restart*. Everything worked the first time and broke the second time.
+
+## 09/16/26 — Hand-tracked ice magic (built with Claude over the MCP)
+
+**What it does now** (`IXD415.toe`, screenshot: `are-you-freezing.png`):
+- MediaPipe hand tracking (free TouchDesigner plugin) feeds a small Python "brain" (Script CHOP).
+- Open palm → stream of snowflake particles from the palm, flying at the camera. Snowflake sound plays.
+- Fist → a ring fills around the fist in 8 steps (green → red). Open at a higher step → more, faster, bigger snow.
+- Both palms open → rainbow. A pill button "Are You Freezing?" appears; touching it plays a finale clip once.
+- Rotate an open hand like a dial → synthesized kick / snare / hats / sub-bass fade in, locked to the clip's beat (137 BPM, the song's tempo).
+
+**What broke, what I asked, what happened**
+- TouchDesigner got paused (spacebar) and nothing moved for 10 minutes while Claude debugged the particle system. Claude eventually noticed the frame counter wasn't advancing and un-paused it.
+- The particle engine's default camera had been orbited off into space; nothing rendered until Claude reset it.
+- Particles died instantly because lifetime went negative (life 1.5 ± variance 3).
+- Every "where is the particle emitter?" bug was a coordinate convention: the tracker's Y is bottom-up, the video is mirrored but the landmarks aren't, and the camera's field of view is horizontal, not vertical.
+- Fire mode got cut: it kept turning into snow when the hand left, and the tracker's gesture labels were unreliable at odd angles. Replaced gesture labels with "how far are the fingertips from the wrist," which works at any rotation.
+- The tracker hallucinated a hand on my face at 20% confidence → raised thresholds to 60–70%.
+- The saved project ballooned to 181 MB (plugin embedded). Switched to referencing the plugin file → 1 MB.
+- TouchDesigner's "increment filename on save" kept popping a dialog and freezing the connection. Turned off.
+- In Composite TOP "over", the FIRST input is on top. Cost us a white pill with invisible text.

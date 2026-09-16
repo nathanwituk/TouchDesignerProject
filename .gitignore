@@ -435,3 +435,4 @@ memory/
 # TouchDesigner backups
 Backup/
 *.toe.bak
+*.[0-9]*.toe

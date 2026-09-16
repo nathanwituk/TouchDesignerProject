@@ -436,3 +436,6 @@ memory/
 Backup/
 *.toe.bak
 *.[0-9]*.toe
+
+# TouchDesigner project files - never commit (Nathan, 2026-09-16)
+*.toe

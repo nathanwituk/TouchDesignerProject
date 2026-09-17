@@ -4,7 +4,7 @@ this is my build log
 ## 09/12/26 — Homework 1: TouchDesigner + Claude MCP + webcam effect
 
 **Result:** webcam → Edge TOP → Out TOP, built by Claude over the MCP connection.
-Screenshots: `touchdesigner-screenshot.png` (the TD window), `webcam-edge-effect.png` (the raw output frame).
+Screenshot: `touchdesigner-screenshot.png` (the TD window).
 Project file: `IXD415.toe`.
 
 ### What broke, what I asked Claude, what happened

@@ -42,3 +42,34 @@ Project file: `IXD415.toe`.
 - The saved project ballooned to 181 MB (plugin embedded). Switched to referencing the plugin file → 1 MB.
 - TouchDesigner's "increment filename on save" kept popping a dialog and freezing the connection. Turned off.
 - In Composite TOP "over", the FIRST input is on top. Cost us a white pill with invisible text.
+
+## 09/21/26
+
+This week was way more thinking than actually building. I came up with ten concepts and found three reference works, so most of the week was basically figuring out what the project even was before making anything*.*
+
+The first thing I did was research live data feeds: 
+Ships, lightning, earthquakes, solar wind, Wikipedia edits, flights, tides. Literally everything. I ended up making this huge table with 15 different options using Chat GPT.
+
+And then Claude basically pointed out that all 15 of them were the exact same idea.
+
+Live data changes a visual and that was it. No real message or "nathan" behind it. 
+
+And even worse, almost every single one already had some famous artist who had done a way better version of it. So I kind of had this moment of like, okay, I didn’t actually come up with 15 ideas. I researched 15 other people’s projects.
+
+So I  flipped the approach.
+
+Instead of the data being the main thing, the body became the actor and the data became more like the weather around you (literally in some concepts lol).
+
+Claude threw 10 really rough ideas at me and I immediately killed probably half of them. One was literally “the piece refuses input from 8–9 p.m.” which I was like, absolutely not. That’s lazy.
+
+The best ideas came from  arguing with Claude about what I felt would be cool, actually impactful, AND what I knew we had some sort of data for.
+
+Things like turning your palms down and making it “rain” to cool the Amazon, holding your actual iPhone Screen Time page up to the camera so the piece can use your number, or doing a TikTok-style swipe where every new “post” is just another, more distorted version of you.
+
+Those started feeling way more interesting because the person isn’t just standing there watching data move anymore. They’re actually doing something.
+
+The thing that broke this week was my Govee light bars. They would not connect to WiFi, and it took me way too long to figure out why.
+
+Turns out I had to disable 5 GHz, go into my iPhone WiFi settings, connect directly to the temporary network coming from the lights, and then finish setup from there. Once they were finally connected, LAN Control showed up, so that was a huge win! I also requested an API key just as a backup in case I need another way to control them later and received the key! 
+
+Biggest thing I learned this week: research the artists before you fall in love with an idea because I almost spent an entire week making  worse versions of things that already existed.
